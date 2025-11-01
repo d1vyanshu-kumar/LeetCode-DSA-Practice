@@ -7,7 +7,7 @@ public class bubble {
         
         // sorting the existing arr
 
-        int [] arr = {4,2,6,9,0};
+        int [] arr = {1,2,3};
 
         swapped(arr);
 
