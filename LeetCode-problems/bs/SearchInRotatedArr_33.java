@@ -3,7 +3,7 @@ public class SearchInRotatedArr_33 {
     public static void main(String[] args) {
         // given a rotated array and we need to find target in this arr...
 
-        int[] nums = { 5, 1, 3 };
+        int[] nums = {3,4,5,1,2};
         int target = 5;
 
         // this is given that the rotated arr is sorted in the acc order previously.
@@ -47,6 +47,7 @@ public class SearchInRotatedArr_33 {
         }
 
         return start; // or end, since they converge
+        
     }
 
     static int findTarget(int[] arr, int target, boolean findingInLeft) {
