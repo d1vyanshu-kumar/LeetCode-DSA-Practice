@@ -6,10 +6,11 @@ public class RE_TwoDimMetrix {
         int[][] matrix =
 
                 {
-                        { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 }
+                        // { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 }
+                        {1},{3}
                 };
 
-        int target = 3;
+        int target = 5;
 
         int [] ans = isTaregetAvl(matrix, target);
         System.out.println(Arrays.toString(ans));
@@ -45,7 +46,7 @@ public class RE_TwoDimMetrix {
 
         // for special case cause it is not matrix until two rows is not given
         if (rows == 1) {
-            binarySearch(matrix, 0, 0, cols - 1, target);
+            return binarySearch(matrix, 0, 0, cols - 1, target);
         }
 
         // now we need to run the code until unless we cant get the two rows
@@ -87,7 +88,7 @@ public class RE_TwoDimMetrix {
 
         if (matrix[rStart][cMid] > target) {
             return binarySearch(matrix, rStart, 0, cMid - 1, target);
-        } else if(matrix[rStart][cMid] < target && target < matrix[rStart][cols-1]) {
+        } else if(matrix[rStart][cMid] < target && target <= matrix[rStart][cols-1]) {
             return binarySearch(matrix, rStart, cMid + 1, cols - 1, target);
         }
 
