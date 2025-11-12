@@ -12,7 +12,7 @@ public class PatternQue_3 {
     // total number of rows
 
     public static void main(String[] args) {
-        findSoln(3);
+        findSoln(10);
     }
 
     static void findSoln(int n) {
