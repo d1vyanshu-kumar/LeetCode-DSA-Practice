@@ -1,12 +1,12 @@
 /*
  * find the right most setBit and return that number
- * look what we can do is for this is 
+ * look what we can do is for this is
  * take an example: 10: 1010 = n
  * and if we want 1 on the very right side we need to do something like this a = 10 b = 1 , c = 0 == abc = 1010
  * and if we and abc with a(neg)1c this will give exactly what we want. so look how can we do this?
  * in binary there is a one bit is reserved which is left most bit for negative and positve if 0 then + ans 1 then -ve
  * and this is the representation of (-n) = a(neg)1c = a(neg)bc
- * lets see how this statment is correct:  
+ * lets see how this statment is correct:
  * so here is the ques that how can we write -ve number in binary: here are the steps:
  * 1) take complement of number
  * 2) + 1 to it
