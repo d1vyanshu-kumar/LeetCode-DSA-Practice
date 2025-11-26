@@ -45,3 +45,5 @@ public class Seive {
 
 }
 
+// do revise of HM...
+// O(n logn)
