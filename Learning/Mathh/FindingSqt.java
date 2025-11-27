@@ -81,5 +81,18 @@ public class FindingSqt {
 
         // return ans;
 
+
+
+
+
+        // this is the 2nd way to solve this issue known as Newton's raphson method
+
+        /*
+        * newton rahpson formula:
+        *                            root(sqrt(N)) = (X + N / X) / 2; X is the assume sqrt root
+        *                            error = |root - X|
+        */
+
+
     }
 }
