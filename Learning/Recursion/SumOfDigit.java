@@ -22,4 +22,6 @@ public class SumOfDigit {
 
         return getDigit + findSum(n/10);
     }
+
+    // remember in product 0 * n = 0;
 }
