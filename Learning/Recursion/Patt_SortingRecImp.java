@@ -4,9 +4,9 @@ public class Patt_SortingRecImp {
     /*
      * here is what the question is all about:
      * ----------
-     * * * (3)
-     * * (2)
-     * (1)
+          * * * (3)
+          * * (2)
+          * (1)
      * ----------
      */
     public static void main(String[] args) {
@@ -69,7 +69,7 @@ public class Patt_SortingRecImp {
             return;
         }
 
-        //        int arr[] = {1, 4, 5, 8, 6};
+        //        int arr[] = {1, 4, 5, 8, 6}; // {1, 4, 5, 8} //  {1, 4, 5} // {1, 4 } // {1} ; index 0;
         if (c < r) {
             if (arr[c] > arr[max]) {
                 selectionSort(arr, r, c + 1, c);
@@ -88,3 +88,5 @@ public class Patt_SortingRecImp {
     }
 
 }
+
+// intelij is far more better then vs code! :(
