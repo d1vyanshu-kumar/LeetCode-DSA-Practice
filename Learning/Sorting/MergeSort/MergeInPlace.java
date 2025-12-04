@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class MergeInPlace {
     public static void main(String[] args) {
         int [] arr = {3,2,5,6};
-        sortTheArrInPlace(arr, 0, arr.length-1);
+        sortTheArrInPlace(arr, 0, arr.length);
         System.out.println(Arrays.toString(arr));
     }
 
