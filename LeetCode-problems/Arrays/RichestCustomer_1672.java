@@ -16,14 +16,15 @@ public class RichestCustomer_1672 {
 
     // look we have to find the maximum so of elements in each row so what we could
     // do
-    // well i am thinking itrate on each rows element and then sum it and store that
+    // well i am thinking itrate on each rows element and then sum it and store that 
+    //
     // in a var and compare with the other rows elemtnt and update that vat
     // according to rows.
 
     static int maxSum(int[][] arr) {
         int maxRowsCount = Integer.MIN_VALUE; // gonna compare with this and update this as per the sum of rows.
         int element = 0;
-
+r
         for (int row = 0; row < arr.length; row++) {
             for (int col = 0; col < arr[row].length; col++) {
                 // now look Up to here we can get access of the elements of the each rows element and now what we can do?

@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b31d2266-d8ae-4aef-a07d-ae453c9bf94e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Learning/Recursion/Patt_SortingRecImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Learning/Recursion/Patt_SortingRecImp.java" afterDir="false" />
-    </list>
+    <list default="true" id="b31d2266-d8ae-4aef-a07d-ae453c9bf94e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="151" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,6 +37,10 @@
         <option name="vmOptionsForImporter" value="-Xmx1024m" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -88,6 +93,7 @@
       <workItem from="1760936735910" duration="162000" />
       <workItem from="1760937763898" duration="96000" />
       <workItem from="1764612960348" duration="27000" />
+      <workItem from="1785505201602" duration="211000" />
     </task>
     <servers />
   </component>

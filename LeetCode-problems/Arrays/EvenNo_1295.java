@@ -6,7 +6,7 @@ public class EvenNo_1295 {
         System.out.println(findingEvenDigit(nums));
     }
 
-    // making a  function that takes that nums arr and return totak numbers which contains even digit
+    // making a  function that takes that nums arr and return total numbers which contains even digit
     static int findingEvenDigit(int [] nums){
         // creating a var which will increased as if the number contains the even digit
         int countEven = 0;
