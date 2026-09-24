@@ -83,13 +83,13 @@ public class Count_Pairs_with_Sum {
                 continue;
             }
 
-            ans += map.getOrDefault(searchNo, 0);
+            ans += map.getOrDefault(searchNo, 0); // checking the past element and add the freq  if not then simply add 0
 
-            map.put(arr[i], map.getOrDefault(arr[i], 0) + 1);
+            map.put(arr[i], map.getOrDefault(arr[i], 0) + 1); // after that just add that element and move one
 
         }
 
         return ans;
-        
+
     }
 }
