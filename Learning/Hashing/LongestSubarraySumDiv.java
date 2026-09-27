@@ -42,7 +42,7 @@ public class LongestSubarraySumDiv {
 
         HashMap<Integer, Integer> map = new HashMap<>();
 
-        map.put(0, -1); // Important for subarray starting from index 0
+         map.put(0, -1); // Important for subarray starting from index 0
 
         for (int i = 0; i < arr.length; i++) {
 
