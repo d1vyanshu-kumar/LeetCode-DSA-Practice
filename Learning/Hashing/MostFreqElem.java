@@ -2,8 +2,6 @@ package Learning.Hashing;
 
 import java.util.HashMap;
 
-import com.apple.laf.resources.aqua;
-
 // public class MostFreqElem {
 
 //     // the question is about the arr contains multiple elements and we have to

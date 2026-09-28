@@ -1,5 +1,3 @@
-package Learning.Hashing;
-
 import java.util.HashMap;
 
 public class ArraySubset {
@@ -27,12 +25,12 @@ public class ArraySubset {
             map.put(arr1[i], map.getOrDefault(arr1[i], 0) + 1);
         }
 
-        // after insertion we have to check the elemnets for the map for the array 2
-        // okay. if it is in he map then we simply have to drop the value by 1
+        // after insertion we have to check the elemnets in the map for the array 2
+        // okay. if it is in the map then we simply have to drop the value by 1
         // also we need to make sure that the count of each element from the arr1 is greater then zero!
         for (int i : arr2) {
-            if (map.containsKey(i) && map.get(i) > 0) {
-                map.put(i, map.get(i) - 1);
+            if (map.containsKey(i) && map.get(i) > 0) { // Initially the count is always > 0, but after consuming elements it can become 0.
+                map.put(i, map.get(i) - 1);   // put method -> update the existing entry
             }else{
                 return false;
             }
