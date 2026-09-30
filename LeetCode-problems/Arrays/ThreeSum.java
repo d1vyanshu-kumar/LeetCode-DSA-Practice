@@ -24,15 +24,15 @@ public class ThreeSum {
 
         List<Integer> triplet = new ArrayList<>();
 
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = i; j < arr.length; j++) {
-                if (arr[i] > arr[j]) {
-                    swap(arr, i, j);
-                }
-            }
-        }
+        // for (int i = 0; i < arr.length; i++) {
+        // for (int j = i; j < arr.length; j++) {
+        // if (arr[i] > arr[j]) {
+        // swap(arr, i, j);
+        // }
+        // }
+        // }
 
-        System.out.println("---------" + Arrays.toString(arr));
+        // System.out.println("---------" + Arrays.toString(arr));
 
         // for (int i = 0; i < arr.length - 2 ; i++) {
         // // if (arr[i] + arr[i+1] + arr[i+2] == 0 && arr[i] != arr[i+1] && arr[i+1] !=
@@ -49,41 +49,80 @@ public class ThreeSum {
 
         // find all triplet;;;
 
-       for (int i = 0; i < arr.length - 2; i++) {
-            // Skip duplicate values for the fixed element
-            if (i > 0 && arr[i] == arr[i - 1]) continue;
+        // for (int i = 0; i < arr.length - 2; i++) {
+        // // Skip duplicate values for the fixed element
+        // if (i > 0 && arr[i] == arr[i - 1]) continue;
+
+        // int left = i + 1;
+        // int right = arr.length - 1;
+
+        // // 3. Two pointers for the remaining sum
+        // while (left < right) {
+        // int sum = arr[i] + arr[left] + arr[right];
+
+        // if (sum == 0) {
+        // list.add(Arrays.asList(arr[i], arr[left], arr[right]));
+
+        // // Skip duplicate values for left and right pointers
+        // while (left < right && arr[left] == arr[left + 1]) left++;
+        // while (left < right && arr[right] == arr[right - 1]) right--;
+
+        // left++;
+        // right--;
+        // } else if (sum < 0) {
+        // left++; // Need a larger sum
+        // } else {
+        // right--; // Need a smaller sum
+        // }
+        // }
+        // }
+
+        Arrays.sort(arr);
+
+        // System.out.println(Arrays.toString(arr));
+
+        for (int i = 0; i < arr.length - 2; i++) {
 
             int left = i + 1;
             int right = arr.length - 1;
 
-            // 3. Two pointers for the remaining sum
+            if (i > 0 && arr[i] == arr[i - 1]) {
+                continue;
+            }
+
             while (left < right) {
                 int sum = arr[i] + arr[left] + arr[right];
 
                 if (sum == 0) {
+
                     list.add(Arrays.asList(arr[i], arr[left], arr[right]));
 
-                    // Skip duplicate values for left and right pointers
-                    while (left < right && arr[left] == arr[left + 1]) left++;
-                    while (left < right && arr[right] == arr[right - 1]) right--;
+                    // Skip duplicate values for left and right to avoid duplicate triplets
+                    while (left < right && arr[left] == arr[left + 1])
+                        left++;
+                    while (left < right && arr[right] == arr[right - 1])
+                        right--;
+
 
                     left++;
                     right--;
                 } else if (sum < 0) {
-                    left++;  // Need a larger sum
+                    left ++;
                 } else {
-                    right--; // Need a smaller sum
+                    right --;
                 }
+
             }
+
         }
 
         return list;
     }
 
-    private static void swap(int[] arr, int i, int j) {
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
-    }
+    // private static void swap(int[] arr, int i, int j) {
+    // int temp = arr[i];
+    // arr[i] = arr[j];
+    // arr[j] = temp;
+    // }
 
 }
