@@ -1,3 +1,28 @@
 {
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.sourcePaths": [
+        "Mathh",
+        "LeetCode-problems/sorting",
+        "LeetCode-problems/bs",
+        "LeetCode-problems/Recursion",
+        "LeetCode-problems/Hashing",
+        "LeetCode-problems/Bitwise",
+        "LeetCode-problems/Arrays",
+        "Learning/patternQue",
+        "Learning/google",
+        "Learning/Sorting/selection",
+        "Learning/Sorting/cyclic",
+        "Learning/Sorting/QuickSort",
+        "Learning/Sorting/Que_",
+        "Learning/Sorting/MergeSort",
+        "Learning/Sorting/Insertion",
+        "Learning/Sorting/Bubble",
+        "Learning/Recursion",
+        "Learning/Mathh",
+        "Learning/LinkedList",
+        "Learning/Hashing",
+        "Learning/BS",
+        "Learning/ BitwiseOp",
+        "LeetCode-problems/slidingWindow"
+    ]
 }
